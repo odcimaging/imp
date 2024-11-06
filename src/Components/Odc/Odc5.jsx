@@ -3,13 +3,13 @@ import { motion, useAnimation } from 'framer-motion'
 
 // Step 1: Define the company logos
 const companies = [
-    { name: 'Dentsply Serona', logo: '/imp/public/dental/Dentsply_sirona_logo.svg' },
-    { name: 'Siemens', logo: '/imp/public/dental/Siemens-logo.svg' },
-    { name: 'Microsoft', logo: '/imp/public/dental/Microsoft_logo_(2012).svg' },
-    { name: 'Honeywell', logo: '/imp/public/dental/Honeywell_logo.svg' },
-    { name: 'Philips', logo: '/imp/public/dental/Philips_logo_new.svg' },
-    { name: 'Toshiba', logo: '/imp/public/dental/Toshiba_logo.svg' },
-    { name: 'Noble Biocare', logo: '/imp/public/dental/Nobel_Biocare_Logo.svg' }
+    { name: 'Dentsply Serona', logo: 'dental/Dentsply_sirona_logo.svg' },
+    { name: 'Siemens', logo: 'dental/Siemens-logo.svg' },
+    { name: 'Microsoft', logo: 'dental/Microsoft_logo_(2012).svg' },
+    { name: 'Honeywell', logo: 'dental/Honeywell_logo.svg' },
+    { name: 'Philips', logo: 'dental/Philips_logo_new.svg' },
+    { name: 'Toshiba', logo: 'dental/Toshiba_logo.svg' },
+    { name: 'Noble Biocare', logo: 'dental/Nobel_Biocare_Logo.svg' }
     
 ]
 

@@ -37,14 +37,14 @@ export default function Odc2() {
 
     const sliderImages = [
         "dental/a1.png",
-        "/dental/a2.png",
-        "/imp/dental/a3.png",
+        "dental/a2.png",
+        "dental/a3.png",
     ]
 
     const circularImages = [
-        { src: "/imp/public/dental/1.png", color: "border-indigo-400" },
-        { src: "/imp/public/dental/2.png", color: "border-green-400" },
-        { src: "/imp/public/dental/3.png", color: "border-pink-400" },
+        { src: "dental/1.png", color: "border-indigo-400" },
+        { src: "dental/2.png", color: "border-green-400" },
+        { src: "dental/3.png", color: "border-pink-400" },
     ]
 
     const testimonials = [
