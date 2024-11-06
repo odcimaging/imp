@@ -2,29 +2,29 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 
-// Step 1: Define the video data
+// Step 1: Define the video data with custom YouTube links
 const videos = [
-    { id: 'dQw4w9WgXcQ', title: 'Meditation Session', color: 'border-indigo-400 dark:border-indigo-600' },
-    { id: 'M7lc1UVf-VE', title: 'Health Consultation', color: 'border-indigo-500 dark:border-indigo-500' },
-    { id: 'EngW7tLk6R8', title: 'Note Taking', color: 'border-indigo-600 dark:border-indigo-400' },
-    { id: 'ZWMdjkw5Mxk', title: 'Supplement Guide', color: 'border-indigo-700 dark:border-indigo-300' },
-    { id: 'UBMk30rjy0o', title: 'Exercise Routine', color: 'border-indigo-800 dark:border-indigo-200' },
-    { id: 'E9oKEJ1pXPw', title: 'Healthy Eating', color: 'border-indigo-900 dark:border-indigo-100' },
-    { id: '9bZkp7q19f0', title: 'Stress Management', color: 'border-indigo-500 dark:border-indigo-500' },
+    { id: 1, title: 'Meditation Session', color: 'border-indigo-400 dark:border-indigo-600', youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
+    { id: 2, title: 'Health Consultation', color: 'border-indigo-500 dark:border-indigo-500', youtubeLink: 'https://www.youtube.com/watch?v=M7lc1UVf-VE' },
+    { id: 3, title: 'Note Taking', color: 'border-indigo-600 dark:border-indigo-400', youtubeLink: 'https://www.youtube.com/watch?v=EngW7tLk6R8' },
+    { id: 4, title: 'Supplement Guide', color: 'border-indigo-700 dark:border-indigo-300', youtubeLink: 'https://www.youtube.com/watch?v=ZWMdjkw5Mxk' },
+    { id: 5, title: 'Exercise Routine', color: 'border-indigo-800 dark:border-indigo-200', youtubeLink: 'https://www.youtube.com/watch?v=UBMk30rjy0o' },
+    { id: 6, title: 'Healthy Eating', color: 'border-indigo-900 dark:border-indigo-100', youtubeLink: 'https://www.youtube.com/watch?v=E9oKEJ1pXPw' },
+    { id: 7, title: 'Stress Management', color: 'border-indigo-500 dark:border-indigo-500', youtubeLink: 'https://www.youtube.com/watch?v=9bZkp7q19f0' },
 ]
 
 export default function Odc6() {
     const [selectedVideo, setSelectedVideo] = useState(null)
 
-    // VideoCircle component
+    // Step 2: Update VideoCircle component to use custom YouTube link
     const VideoCircle = ({ video, index, small = false }) => {
         const [isLoaded, setIsLoaded] = useState(false)
 
         useEffect(() => {
             const img = new Image()
-            img.src = `a1.png`
+            img.src = `https://img.youtube.com/vi/${getYouTubeId(video.youtubeLink)}/0.jpg`
             img.onload = () => setIsLoaded(true)
-        }, [video.id])
+        }, [video.youtubeLink])
 
         const floatAnimation = {
             y: [0, -3, 0],
@@ -50,7 +50,7 @@ export default function Odc6() {
                     </div>
                 )}
                 <motion.img
-                    src={`a2.png`}
+                    src={`https://img.youtube.com/vi/${getYouTubeId(video.youtubeLink)}/0.jpg`}
                     alt={video.title}
                     className="w-full h-full object-cover"
                     initial={{ opacity: 0 }}
@@ -74,7 +74,7 @@ export default function Odc6() {
         )
     }
 
-    // VideoPopup component
+    // Step 3: Update VideoPopup component to use custom YouTube link
     const VideoPopup = ({ video, onClose }) => {
         return (
             <motion.div
@@ -93,7 +93,7 @@ export default function Odc6() {
                     <div className="relative pt-[56.25%]">
                         <iframe
                             className="absolute inset-0 w-full h-full"
-                            src={`https://www.youtube.com/embed/${video.id}?autoplay=1`}
+                            src={`https://www.youtube.com/embed/${getYouTubeId(video.youtubeLink)}?autoplay=1`}
                             title={video.title}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
@@ -114,16 +114,22 @@ export default function Odc6() {
         )
     }
 
-    return (
-        <div className=" bg-gray-50 dark:bg-gray-900 font-inter transition-colors duration-300">
-            <div className=" max-w-7xl mx-auto p-4 sm:p-8 md:p-12 lg:p-16">
-                {/* Step 2: Create the animated title */}
+    // Step 4: Helper function to extract YouTube video ID from URL
+    const getYouTubeId = (url) => {
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
+        const match = url.match(regExp)
+        return (match && match[2].length === 11) ? match[2] : null
+    }
 
-                <h1 className='text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-12 lg:pb-8 text-center "text-gray-900 dark:text-gray-100 inline-block'>
-                    you can learn from our resources how to <span className="text-gray-400 dark:text-gray-300 inline-block">get best result in your dental practice</span>
+    return (
+        <div className="bg-gray-50 dark:bg-gray-900 font-inter transition-colors duration-300">
+            <div className="max-w-7xl mx-auto p-4 sm:p-8 md:p-12 lg:p-16">
+                {/* Step 5: Create the animated title */}
+                <h1 className="text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-12 lg:pb-8 text-center text-gray-900 dark:text-gray-100">
+                    you can learn from our resources how to <span className="text-gray-400 dark:text-gray-300">get best result in your dental practice</span>
                 </h1>
 
-                {/* Step 3: Create the video grid */}
+                {/* Step 6: Create the video grid */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                     <VideoCircle video={videos[0]} index={0} />
                     <VideoCircle video={videos[1]} index={1} />
@@ -135,7 +141,7 @@ export default function Odc6() {
                     <VideoCircle video={videos[6]} index={6} />
                 </div>
 
-                {/* Step 4: Create the video popup */}
+                {/* Step 7: Create the video popup */}
                 <AnimatePresence>
                     {selectedVideo && (
                         <VideoPopup video={selectedVideo} onClose={() => setSelectedVideo(null)} />
