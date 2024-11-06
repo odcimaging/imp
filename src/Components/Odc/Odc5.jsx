@@ -3,13 +3,13 @@ import { motion, useAnimation } from 'framer-motion'
 
 // Step 1: Define the company logos
 const companies = [
-    { name: 'Dentsply Serona', logo: 'dental/Dentsply_sirona_logo.svg' },
-    { name: 'Siemens', logo: 'dental/Siemens-logo.svg' },
-    { name: 'Microsoft', logo: 'dental/Microsoft_logo_(2012).svg' },
-    { name: 'Honeywell', logo: 'dental/Honeywell_logo.svg' },
-    { name: 'Philips', logo: 'dental/Philips_logo_new.svg' },
-    { name: 'Toshiba', logo: 'dental/Toshiba_logo.svg' },
-    { name: 'Noble Biocare', logo: 'dental/Nobel_Biocare_Logo.svg' }
+    { name: 'Dentsply Serona', logo: 'public/Dentsply_sirona_logo.svg' },
+    { name: 'Siemens', logo: 'public/Siemens-logo.svg' },
+    { name: 'Microsoft', logo: 'public/Microsoft_logo_(2012).svg' },
+    { name: 'Honeywell', logo: 'public/Honeywell_logo.svg' },
+    { name: 'Philips', logo: 'public/Philips_logo_new.svg' },
+    { name: 'Toshiba', logo: 'public/Toshiba_logo.svg' },
+    { name: 'Noble Biocare', logo: 'public/Nobel_Biocare_Logo.svg' }
     
 ]
 
@@ -50,7 +50,7 @@ export default function Odc5() {
                     </h2>
 
                     <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
-                    Experience the pinnacle of dental implant technology with our expert team. Restore your confidence with a radiant, natural-looking smile.
+                    Experience the pinnacle of public implant technology with our expert team. Restore your confidence with a radiant, natural-looking smile.
                 </p>
                  
                 </div>

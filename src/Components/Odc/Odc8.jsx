@@ -49,49 +49,49 @@ export default function Odc8() {
             name: "Sarah Thompson",
             role: "Product Manager",
             company: "TechCorp",
-            image: "/imp/public/dental/1.png",
+            image: "public/1.png",
             quote: "This platform has completely transformed how we handle our workflow. The efficiency gains have been remarkable."
         },
         {
             name: "Elena Petrova",
             role: "Finance Director",
             company: "GlobalBank",
-            image: "/imp/public/dental/1.png",
+            image: "public/1.png",
             quote: "The financial reporting features have streamlined our processes significantly. Exceptional ROI."
         },
         {
             name: "Marcus Brown",
             role: "IT Manager",
             company: "TechFlow",
-            image: "/imp/public/dental/1.png",
+            image: "public/1.png",
             quote: "Security features are top-notch. Integration with our existing systems was seamless."
         },
         {
             name: "Rachel Chen",
             role: "Creative Director",
             company: "ArtisticMinds",
-            image: "/imp/public/dental/2.png",
+            image: "public/2.png",
             quote: "The creative tools have enhanced our team's productivity. Perfect for collaborative design work."
         },
         {
             name: "Thomas Wright",
             role: "Engineering Lead",
             company: "BuildTech",
-            image: "/imp/public/dental/3.png",
+            image: "public/3.png",
             quote: "The platform's scalability is impressive. Handles our complex projects with ease."
         },
         {
             name: "Sophia Garcia",
             role: "Customer Success",
             company: "ServicePro",
-            image: "/imp/public/dental/2.png",
+            image: "public/2.png",
             quote: "Our customer satisfaction scores have improved significantly since implementation."
         },
         {
             name: "John Anderson",
             role: "Quality Assurance",
             company: "QualityTech",
-            image: "/imp/public/dental/3.png",
+            image: "public/3.png",
             quote: "The testing and QA features have revolutionized our quality assurance processes."
         }
     ]
