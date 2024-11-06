@@ -37,14 +37,14 @@ export default function Odc2() {
 
     const sliderImages = [
         "a1.png",
-        "/a2.png",
-        "/a3.png",
+        "a2.png",
+        "a3.png",
     ]
 
     const circularImages = [
-        { src: "public/1.png", color: "border-indigo-400" },
-        { src: "public/2.png", color: "border-green-400" },
-        { src: "public/3.png", color: "border-pink-400" },
+        { src: "1.png", color: "border-indigo-400" },
+        { src: "2.png", color: "border-green-400" },
+        { src: "3.png", color: "border-pink-400" },
     ]
 
     const testimonials = [
