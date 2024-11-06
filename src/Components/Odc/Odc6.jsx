@@ -50,7 +50,7 @@ export default function Odc6() {
                     </div>
                 )}
                 <motion.img
-                    src={`/public/dental/a2.png`}
+                    src={`/imp/public/dental/a2.png`}
                     alt={video.title}
                     className="w-full h-full object-cover"
                     initial={{ opacity: 0 }}

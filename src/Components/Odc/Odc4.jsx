@@ -11,20 +11,20 @@ export default function Odc4() {
     const specialtyRef = useRef(null)
 
     const doctors = [
-        { id: 1, name: "Dr. Sarah", specialty: "Cardiologist", image: "./public/dental/1.png", borderColor: "border-blue-400" },
-        { id: 2, name: "Dr. Michael", specialty: "Neurologist", image: "./public/dental/2.png", borderColor: "border-green-400" },
-        { id: 3, name: "Dr. Emily", specialty: "Pediatrician", image: "./public/dental/3.png", borderColor: "border-purple-400" },
-        { id: 4, name: "Dr. James", specialty: "Dermatologist", image: "./public/dental/2.png", borderColor: "border-red-400" },
-        { id: 5, name: "Dr. Olivia", specialty: "Orthopedist", image: "./public/dental/1.png", borderColor: "border-yellow-400" },
-        { id: 6, name: "Dr. Daniel", specialty: "Psychiatrist", image: "./public/dental/3.png", borderColor: "border-pink-400" },
+        { id: 1, name: "Dr. Sarah", specialty: "Cardiologist", image: "/imp/public/dental/1.png", borderColor: "border-blue-400" },
+        { id: 2, name: "Dr. Michael", specialty: "Neurologist", image: "/imp/public/dental/2.png", borderColor: "border-green-400" },
+        { id: 3, name: "Dr. Emily", specialty: "Pediatrician", image: "/imp/public/dental/3.png", borderColor: "border-purple-400" },
+        { id: 4, name: "Dr. James", specialty: "Dermatologist", image: "/imp/public/dental/2.png", borderColor: "border-red-400" },
+        { id: 5, name: "Dr. Olivia", specialty: "Orthopedist", image: "/imp/public/dental/1.png", borderColor: "border-yellow-400" },
+        { id: 6, name: "Dr. Daniel", specialty: "Psychiatrist", image: "/imp/public/dental/3.png", borderColor: "border-pink-400" },
     ]
 
     const yogaImages = [
-        { src: "./public/dental/a1.png", title: "Warrior Pose" },
-        { src: "./public/dental/a2.png", title: "Tree Pose" },
-        { src: "./public/dental/a3.png", title: "Downward Dog" },
-        { src: "./public/dental/a1.png", title: "Lotus Pose" },
-        { src: "./public/dental/a2.png", title: "Child's Pose" },
+        { src: "/imp/public/dental/a1.png", title: "Warrior Pose" },
+        { src: "/imp/public/dental/a2.png", title: "Tree Pose" },
+        { src: "/imp/public/dental/a3.png", title: "Downward Dog" },
+        { src: "/imp/public/dental/a1.png", title: "Lotus Pose" },
+        { src: "/imp/public/dental/a2.png", title: "Child's Pose" },
     ]
 
     const specialties = [
