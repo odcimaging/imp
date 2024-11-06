@@ -1,33 +1,23 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
 
 import {
-  createBrowserRouter,
-  RouterProvider,
+  HashRouter as Router,  // Use HashRouter instead of BrowserRouter
+  Route,
+  Routes,
 } from "react-router-dom";
-
 
 import Home from './Components/Home/Home';
 
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home></Home>,
-
-    children: [
-      {
-        path: "/home",
-        element: <Home></Home>,
-      },
-    ],
-  },
-]);
-
+// Update to use HashRouter for routing
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
-)
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
+  </StrictMode>
+);
