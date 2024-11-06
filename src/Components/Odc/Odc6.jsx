@@ -22,7 +22,7 @@ export default function Odc6() {
 
         useEffect(() => {
             const img = new Image()
-            img.src = `/public/dental/a1.png`
+            img.src = `a1.png`
             img.onload = () => setIsLoaded(true)
         }, [video.id])
 
@@ -50,7 +50,7 @@ export default function Odc6() {
                     </div>
                 )}
                 <motion.img
-                    src={`public/a2.png`}
+                    src={`a2.png`}
                     alt={video.title}
                     className="w-full h-full object-cover"
                     initial={{ opacity: 0 }}

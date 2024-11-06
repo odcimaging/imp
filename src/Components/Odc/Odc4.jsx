@@ -11,20 +11,20 @@ export default function Odc4() {
     const specialtyRef = useRef(null)
 
     const doctors = [
-        { id: 1, name: "Dr. Sarah", specialty: "Cardiologist", image: "public/1.png", borderColor: "border-blue-400" },
-        { id: 2, name: "Dr. Michael", specialty: "Neurologist", image: "public/2.png", borderColor: "border-green-400" },
-        { id: 3, name: "Dr. Emily", specialty: "Pediatrician", image: "public/3.png", borderColor: "border-purple-400" },
-        { id: 4, name: "Dr. James", specialty: "Dermatologist", image: "public/2.png", borderColor: "border-red-400" },
-        { id: 5, name: "Dr. Olivia", specialty: "Orthopedist", image: "public/1.png", borderColor: "border-yellow-400" },
-        { id: 6, name: "Dr. Daniel", specialty: "Psychiatrist", image: "public/3.png", borderColor: "border-pink-400" },
+        { id: 1, name: "Dr. Sarah", specialty: "Cardiologist", image: "1.png", borderColor: "border-blue-400" },
+        { id: 2, name: "Dr. Michael", specialty: "Neurologist", image: "2.png", borderColor: "border-green-400" },
+        { id: 3, name: "Dr. Emily", specialty: "Pediatrician", image: "3.png", borderColor: "border-purple-400" },
+        { id: 4, name: "Dr. James", specialty: "Dermatologist", image: "2.png", borderColor: "border-red-400" },
+        { id: 5, name: "Dr. Olivia", specialty: "Orthopedist", image: "1.png", borderColor: "border-yellow-400" },
+        { id: 6, name: "Dr. Daniel", specialty: "Psychiatrist", image: "3.png", borderColor: "border-pink-400" },
     ]
 
     const yogaImages = [
-        { src: "public/a1.png", title: "Warrior Pose" },
-        { src: "public/a2.png", title: "Tree Pose" },
-        { src: "public/a3.png", title: "Downward Dog" },
-        { src: "public/a1.png", title: "Lotus Pose" },
-        { src: "public/a2.png", title: "Child's Pose" },
+        { src: "a1.png", title: "Warrior Pose" },
+        { src: "a2.png", title: "Tree Pose" },
+        { src: "a3.png", title: "Downward Dog" },
+        { src: "a1.png", title: "Lotus Pose" },
+        { src: "a2.png", title: "Child's Pose" },
     ]
 
     const specialties = [

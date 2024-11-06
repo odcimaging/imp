@@ -11,9 +11,9 @@ const services = [
         detailedDescription: "Our cosmetic dentistry services are designed to improve the appearance of your teeth and smile. We offer a range of treatments including teeth whitening, veneers, bonding, and smile makeovers.",
         images: [
            
-           "public/a1.png",
-            "public/a2.png",
-            "public/a3.png",
+           "a1.png",
+            "a2.png",
+            "a3.png",
         ]
     },
     {
@@ -22,9 +22,9 @@ const services = [
         description: "Comprehensive care for all your dental health needs.",
         detailedDescription: "Our general dentistry services cover a wide range of treatments to maintain and improve your oral health. From routine check-ups and cleanings to fillings, root canals, and gum disease treatment.",
         images: [
-            "public/a3.png",
-            "public/a2.png",
-            "public/a1.png",
+            "a3.png",
+            "a2.png",
+            "a1.png",
         ]
     },
     {
@@ -34,9 +34,9 @@ const services = [
         detailedDescription: "Dental implants are a revolutionary solution for replacing missing teeth. Our state-of-the-art implant procedures provide a permanent, natural-looking replacement that functions just like your natural teeth.",
         images: [
            
-          "public/a2.png",
-            "public/a1.png",
-            "public/a3.png",
+          "a2.png",
+            "a1.png",
+            "a3.png",
         ]
     },
     {
@@ -46,9 +46,9 @@ const services = [
         detailedDescription: "Our orthodontic treatments are designed to align your teeth and jaws for a healthier, more beautiful smile. We offer a variety of options including traditional braces, clear aligners, and accelerated orthodontics.",
         images: [
            
-           "public/a1.png",
-            "public/a3.png",
-            "public/a2.png",
+           "a1.png",
+            "a3.png",
+            "a2.png",
         ]
     },
     {
@@ -57,9 +57,9 @@ const services = [
         description: "Regular check-ups and cleanings for optimal oral health.",
         detailedDescription: "Preventive care is the foundation of good oral health. Our preventive services include regular dental check-ups, professional cleanings, fluoride treatments, and dental sealants.",
         images: [
-            "public/a3.png",
-            "public/a1.png",
-            "public/a2.png",
+            "a3.png",
+            "a1.png",
+            "a2.png",
         ]
     }
 ]
