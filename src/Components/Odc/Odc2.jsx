@@ -36,8 +36,8 @@ export default function Odc2() {
     }, [])
 
     const sliderImages = [
-        "/dental/a1.png",
-        "/dental/a2.png",
+        "/imp/dental/a1.png",
+        "./imp/dental/a2.png",
         "./dental/a3.png",
     ]
 
