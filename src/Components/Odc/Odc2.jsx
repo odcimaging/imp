@@ -72,14 +72,18 @@ export default function Odc2() {
                                 <p className={`text-lg text-gray-600 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     Maxillofacial Imaging & Digital Dentistry Center
                                 </p>
+
+                                <Link to="/services">
                                 <button className={`inline-flex items-center px-6 py-3 rounded-full bg-indigo-500 dark:bg-black dark:hover:bg-gray-900 dark:border-gray-900 dark:border-4  text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     ODC Imaging Services
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </button>
+                                </Link>
+                                
                             </div>
 
                             <div className="hidden md:grid md:grid-cols-2 gap-4">
-                                <div 
+                                <div
                                     className={`p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-md transition-all duration-1000 ease-out delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} overflow-hidden h-[300px] md:h-[250px] relative`}
                                     style={{
                                         backgroundImage: "url('cover1.jpg')",
@@ -92,21 +96,21 @@ export default function Odc2() {
                                         <h3 className="font-semibold mb-4 text-white text-center bottom-0">ON TIME QUALITY REPORT</h3>
                                         <div className="flex items-center justify-center h-full relative">
                                             <div className="relative w-32 h-32">
-                                                
-                                                
+
+
                                             </div>
                                             <ColoredEmoji emoji="😁" color="#FF6B6B" />
                                             <ColoredEmoji emoji="😄" color="#4ECDC4" />
                                             <ColoredEmoji emoji="😊" color="#45B7D1" />
                                             <ColoredEmoji emoji="🥳" color="#F7B801" />
                                             <ColoredEmoji emoji="👍" color="#96BB7C" />
-                                        
-                                          
+
+
                                         </div>
                                     </div>
                                 </div>
 
-                                <div 
+                                <div
                                     className={`p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-md transition-all duration-1000 ease-out delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} overflow-hidden h-[300px] md:h-[250px] relative`}
                                     style={{
                                         backgroundImage: "url('cover2.jpg')",
@@ -146,9 +150,9 @@ export default function Odc2() {
                                         onClick={() => openPdfViewer(pdf)}
                                         aria-label={`View ${pdf.name}`}
                                     >
-                                        <img 
-                                            src={pdf.image} 
-                                            alt={pdf.name} 
+                                        <img
+                                            src={pdf.image}
+                                            alt={pdf.name}
                                             className="w-full h-full object-cover"
                                         />
                                         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
