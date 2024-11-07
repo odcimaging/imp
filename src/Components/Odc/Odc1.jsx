@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { ArrowUpRight, Menu, X, Clock as ClockIcon, Sun, Moon } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const NAVBAR_HEIGHT = '4rem'
 
@@ -71,7 +72,7 @@ export default function Odc1() {
 
   // Effect to initialize dark mode from localStorage or system preference
   useEffect(() => {
-    const isDark = localStorage.getItem('darkMode') === 'true' || 
+    const isDark = localStorage.getItem('darkMode') === 'true' ||
       (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     setIsDarkMode(isDark)
     if (isDark) {
@@ -157,13 +158,15 @@ export default function Odc1() {
 
             {/* Action Buttons - hidden on mobile, shown on larger screens */}
             <div className="hidden md:flex md:items-center md:space-x-4">
-              <a
-                href="/report"
-                className="inline-flex justify-center items-center px-4 py-2 bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-2 dark:hover:bg-white dark:hover:text-black  text-white rounded-full hover:bg-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 transition-all duration-300 font-normal text-sm hover:shadow-lg hover:-translate-y-0.5"
-              >
-                Online Report
-                <ArrowUpRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
+              <Link to="/report">
+                <button
+                  className="inline-flex justify-center items-center px-4 py-2 bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-2 dark:hover:bg-white dark:hover:text-black text-white rounded-full hover:bg-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 transition-all duration-300 font-normal text-sm hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  Online Report
+                  <ArrowUpRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </button>
+              </Link>
+
             </div>
 
             {/* Hamburger menu and dark mode toggle for mobile */}
@@ -194,9 +197,8 @@ export default function Odc1() {
         {/* Mobile menu, show/hide based on menu state */}
         <div
           ref={menuRef}
-          className={`md:hidden transition-all duration-500 ease-in-out ${
-            isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-          } overflow-hidden absolute top-full left-0 right-0 bg-white dark:bg-black`}
+          className={`md:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            } overflow-hidden absolute top-full left-0 right-0 bg-white dark:bg-black`}
           aria-hidden={!isMenuOpen}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -204,9 +206,8 @@ export default function Odc1() {
               <a
                 key={item}
                 href={`/${item.toLowerCase().replace(' ', '-')}`}
-                className={`block px-3 py-2 rounded-md text-base font-medium text-black dark:text-white hover:text-indigo-500 dark:hover:text-indigo-400 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all duration-300 transform ${
-                  isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium text-black dark:text-white hover:text-indigo-500 dark:hover:text-indigo-400 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all duration-300 transform ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+                  }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
                 tabIndex={isMenuOpen ? 0 : -1}
               >
@@ -221,7 +222,7 @@ export default function Odc1() {
             >
               Online Report
             </a>
-          
+
             {/* Attractive Clock - visible on mobile when menu is open */}
             <div className="flex items-center justify-center space-x-2 bg-gradient-to-r bg-indigo-600 dark:bg-black dark:border-gray-900 dark:border-4  text-white px-4 py-2 rounded-full shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105" aria-live="polite" aria-atomic="true">
               <ClockIcon className="h-5 w-5 animate-pulse" aria-hidden="true" />

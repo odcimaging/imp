@@ -1,14 +1,17 @@
 import { Outlet } from "react-router-dom";
-import Home from "../Home/Home";
+
+import Odc1 from "../Odc/Odc1";
+
 
 
 const Root = () => {
     return (
         <div>
 
-            <Home></Home>
+            <Odc1></Odc1>
 
             <Outlet></Outlet>
+     
 
             
         </div>

@@ -116,7 +116,7 @@ export default function Odc2() {
                                 >
                                     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-2xl"></div>
                                     <div className="relative z-10 h-full flex flex-col">
-                                        <h3 className="font-semibold mb-4 text-white font-bold">From Specialist Doctor</h3>
+                                        <h3 className="mb-4 text-white font-bold">From Specialist Doctor</h3>
                                         <div className="flex-grow relative">
                                             {testimonials.map((testimonial, index) => (
                                                 <div
