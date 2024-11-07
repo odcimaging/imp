@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { ArrowRight, Smile, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const ColoredEmoji = ({ emoji, color }) => (
     <span className="text-2xl" style={{ color }}>
@@ -74,12 +75,11 @@ export default function Odc2() {
                                 </p>
 
                                 <Link to="/services">
-                                <button className={`inline-flex items-center px-6 py-3 rounded-full bg-indigo-500 dark:bg-black dark:hover:bg-gray-900 dark:border-gray-900 dark:border-4  text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                                    ODC Imaging Services
-                                    <ArrowRight className="ml-2 h-5 w-5" />
-                                </button>
+                                    <button className={`inline-flex items-center px-6 py-3 rounded-full bg-indigo-500 dark:bg-black dark:hover:bg-gray-900 dark:border-gray-900 dark:border-4  text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                                        ODC Imaging Services
+                                        <ArrowRight className="ml-2 h-5 w-5" />
+                                    </button>
                                 </Link>
-                                
                             </div>
 
                             <div className="hidden md:grid md:grid-cols-2 gap-4">
