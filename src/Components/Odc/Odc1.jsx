@@ -196,7 +196,7 @@ export default function Odc1() {
                   Online Report
                   <ArrowUpRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </button>
-              </Link>   
+              </Link>
 
             </div>
 
@@ -234,25 +234,25 @@ export default function Odc1() {
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={item}
-                href={`/${item.toLowerCase().replace(' ', '-')}`}
+                to={`/${item.toLowerCase().replace(' ', '-')}`}
                 className={`block px-3 py-2 rounded-md text-base font-medium text-black dark:text-white hover:text-indigo-500 dark:hover:text-indigo-400 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all duration-300 transform ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
                   }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
                 tabIndex={isMenuOpen ? 0 : -1}
               >
                 {item}
-              </a>
+              </Link>
             ))}
             {/* Mobile Action Buttons */}
-            <a
-              href="/report"
-              className="block w-full text-center px-3 py-2 rounded-md text-base font-medium bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-4 dark:hover:bg-gray-800  text-white hover:bg-indigo-600 transition-colors duration-300"
+            <Link
+              to="/report"
+              className="block w-full text-center px-3 py-2 rounded-md text-base font-medium bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-4 dark:hover:bg-gray-800 text-white hover:bg-indigo-600 transition-colors duration-300"
               tabIndex={isMenuOpen ? 0 : -1}
             >
               Online Report
-            </a>
+            </Link>
 
             {/* Attractive Clock - visible on mobile when menu is open */}
             <div className="flex items-center justify-center space-x-2 bg-gradient-to-r bg-indigo-600 dark:bg-black dark:border-gray-900 dark:border-4  text-white px-4 py-2 rounded-full shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105" aria-live="polite" aria-atomic="true">
