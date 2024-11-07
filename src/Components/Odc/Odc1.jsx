@@ -18,6 +18,10 @@ export default function Odc1() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode)
   }
@@ -50,7 +54,7 @@ export default function Odc1() {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'Escape') {
-        setIsMenuOpen(false)
+        closeMenu()
       }
     }
 
@@ -228,7 +232,7 @@ export default function Odc1() {
         {/* Mobile menu, show/hide based on menu state */}
         <div
           ref={menuRef}
-          className={`md:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             } overflow-hidden absolute top-full left-0 right-0 bg-white dark:bg-black`}
           aria-hidden={!isMenuOpen}
         >
@@ -241,6 +245,7 @@ export default function Odc1() {
                   }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
                 tabIndex={isMenuOpen ? 0 : -1}
+                onClick={closeMenu}
               >
                 {item}
               </Link>
@@ -250,6 +255,7 @@ export default function Odc1() {
               to="/report"
               className="block w-full text-center px-3 py-2 rounded-md text-base font-medium bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-4 dark:hover:bg-gray-800 text-white hover:bg-indigo-600 transition-colors duration-300"
               tabIndex={isMenuOpen ? 0 : -1}
+              onClick={closeMenu}
             >
               Online Report
             </Link>

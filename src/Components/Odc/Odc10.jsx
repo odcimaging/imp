@@ -10,11 +10,9 @@ export default function Odc10() {
         <div className='bg-gray-50 dark:bg-black  '>
 
             <footer className="container max-w-7xl mx-auto px-4 py-12 font-inter bg-gray-50 dark:bg-black">
-                <div className="container mx-auto flex items-center justify-center text-sm text-gray-600 dark:text-gray-400">
-                    <span className="font-bold mr-1 text-lg text-indigo-500 dark:text-white">© 2024 ODC IMAGING</span>
-                    <span className="mr-1 text-lg">• Always Ready To</span>
-                    <Heart className="w-7 h-7  text-indigo-500 hover:text-indigo-600 dark:text-white transition-colors duration-300" />
-                    <span className="text-lg ml-1">Serve You !</span>
+                <div className="container mx-auto flex flex-col items-center justify-center text-sm text-gray-600 dark:text-gray-400">
+                    <p1 className="font-bold mr-1 text-sm lg:text-lg text-indigo-500 dark:text-white">© 2024 ODC IMAGING</p1>
+                    <p1 className="mr-1 text-sm lg:text-lg text-black dark:text-white"> Always Ready To Serve You !</p1>                
                 </div>
             </footer>
 

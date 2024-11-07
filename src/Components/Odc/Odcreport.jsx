@@ -60,12 +60,12 @@ export default function Odcreport() {
 
     return (
         <div className="bg-gray-50 dark:bg-black font-inter min-h-screen">
-            <section className="w-full max-w-7xl mx-auto px-4 pt-20 sm:px-6 lg:px-0 rounded-3xl bg-white dark:bg-black">
-                <div className="rounded-2xl bg-white dark:bg-black p-8 overflow-hidden transition-all duration-500 ease-in-out">
+            <section className="w-full max-w-7xl mx-auto lg:px-4 px-2 pt-20   rounded-3xl bg-white dark:bg-black">
+                <div className="rounded-2xl bg-white dark:bg-black p-4 lg:p-4 overflow-hidden transition-all duration-500 ease-in-out">
                     <div className="grid md:grid-cols-2 gap-8 items-stretch">
                         <div className="flex flex-col justify-between space-y-8 h-full">
                             <div className="space-y-4">
-                                <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                                <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold  text-gray-900 dark:text-white transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     ODC REPORT
                                 </h1>
                                 <p className={`text-lg text-gray-600 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -93,7 +93,7 @@ export default function Odcreport() {
                         </div>
 
                         <div className={`transition-all  duration-1000 ease-out delay-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} h-full`}>
-                            <div className="bg-white  dark:bg-black dark:border-gray-900 dark:border-4 h-full rounded-2xl overflow-hidden shadow-lg p-6 flex flex-col justify-between">
+                            <div className="bg-white  dark:bg-black dark:border-gray-900 dark:border-4 h-full rounded-2xl overflow-hidden shadow-lg p-2 lg:p-6 flex flex-col justify-between">
                                 <div className="space-y-8  h-full grid grid-cols-1">
                                     <div className='  flex flex-col justify-between'>
                                         <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">Patient's Report</h3>
@@ -103,7 +103,7 @@ export default function Odcreport() {
                                             value={inputValue1}
                                             onChange={handleInputChange1}
                                             onKeyDown={(e) => handleKeyDown(e, inputValue1)}
-                                            className="w-full placeholder-black px-3 py-2 h-10 border dark:placeholder-white  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white mb-2"
+                                            className="w-full  placeholder-black px-3 py-2 h-10 border dark:placeholder-white  border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white mb-2"
                                              placeholder="Enter Bill Invoice Number"
                                         />
                                         <button 
