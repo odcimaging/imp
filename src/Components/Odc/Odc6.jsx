@@ -4,13 +4,13 @@ import { X } from 'lucide-react'
 
 // Step 1: Define the video data with custom YouTube links
 const videos = [
-    { id: 1, title: 'Meditation Session', color: 'border-indigo-400 dark:border-indigo-600', youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' },
-    { id: 2, title: 'Health Consultation', color: 'border-indigo-500 dark:border-indigo-500', youtubeLink: 'https://www.youtube.com/watch?v=M7lc1UVf-VE' },
-    { id: 3, title: 'Note Taking', color: 'border-indigo-600 dark:border-indigo-400', youtubeLink: 'https://www.youtube.com/watch?v=EngW7tLk6R8' },
-    { id: 4, title: 'Supplement Guide', color: 'border-indigo-700 dark:border-indigo-300', youtubeLink: 'https://www.youtube.com/watch?v=ZWMdjkw5Mxk' },
-    { id: 5, title: 'Exercise Routine', color: 'border-indigo-800 dark:border-indigo-200', youtubeLink: 'https://www.youtube.com/watch?v=UBMk30rjy0o' },
-    { id: 6, title: 'Healthy Eating', color: 'border-indigo-900 dark:border-indigo-100', youtubeLink: 'https://www.youtube.com/watch?v=E9oKEJ1pXPw' },
-    { id: 7, title: 'Stress Management', color: 'border-indigo-500 dark:border-indigo-500', youtubeLink: 'https://www.youtube.com/watch?v=9bZkp7q19f0' },
+    { id: 1, title: 'ODC Day', color: 'border-green-400 dark:border-indigo-600', youtubeLink: 'https://www.youtube.com/watch?v=rkVJ55NWC8k' },
+    { id: 2, title: 'Surgical Guide', color: 'border-red-500 dark:border-indigo-500', youtubeLink: 'https://www.youtube.com/watch?v=t8DvbSr44CM' },
+    { id: 3, title: 'Digital Dentistry', color: 'border-blue-600 dark:border-indigo-400', youtubeLink: 'https://www.youtube.com/watch?v=v6-RmXttmJ8' },
+    { id: 4, title: 'CBCT Basic', color: 'border-yellow-700 dark:border-indigo-300', youtubeLink: 'https://www.youtube.com/watch?v=n81CZWAM5NY' },
+    { id: 5, title: 'Implant Basic', color: 'border-indigo-800 dark:border-indigo-200', youtubeLink: 'https://www.youtube.com/watch?v=WrqdUllzQwU' },
+    { id: 6, title: 'Steps', color: 'border-indigo-900 dark:border-indigo-100', youtubeLink: 'https://www.youtube.com/watch?v=YmG1MXaajjA' },
+    { id: 7, title: 'Guided Implant', color: 'border-indigo-500 dark:border-indigo-500', youtubeLink: 'https://www.youtube.com/watch?v=skXL1nFv_zY' },
 ]
 
 export default function Odc6() {
@@ -122,7 +122,7 @@ export default function Odc6() {
     }
 
     return (
-        <div className="bg-gray-50 dark:bg-gray-900 font-inter transition-colors duration-300">
+        <div className="bg-gray-50 dark:bg-black font-inter transition-colors duration-300">
             <div className="max-w-7xl mx-auto p-4 sm:p-8 md:p-12 lg:p-16">
                 {/* Step 5: Create the animated title */}
                 <h1 className="text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-12 lg:pb-8 text-center text-gray-900 dark:text-gray-100">

@@ -6,9 +6,9 @@ const companies = [
     { name: 'Dentsply Serona', logo: 'Dentsply_sirona_logo.svg' },
     { name: 'Siemens', logo: 'Siemens-logo.svg' },
     { name: 'Microsoft', logo: 'Microsoft_logo_(2012).svg' },
-    { name: 'Honeywell', logo: 'Honeywell_logo.svg' },
+    { name: 'Osteem', logo: 'logo1.png' },
     { name: 'Philips', logo: 'Philips_logo_new.svg' },
-    { name: 'Toshiba', logo: 'Toshiba_logo.svg' },
+    { name: '3d slicer', logo: '3D-Slicer-Mark.png' },
     { name: 'Noble Biocare', logo: 'Nobel_Biocare_Logo.svg' }
     
 ]
@@ -41,16 +41,16 @@ export default function Odc5() {
 
     // Step 6: Render the component
     return (
-        <div className="bg-white dark:bg-gray-900  font-inter transition-colors duration-300">
+        <div className="bg-white dark:bg-black  font-inter transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6  relative">
                 {/* Step 7: Create the title */}
                 <div className=" mb-12">
                     <h2 className=" pt-8  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
-                        Trusted by Industry Leaders
+                        ODC Imaging Technology Partner
                     </h2>
 
                     <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
-                    Experience the pinnacle of public implant technology with our expert team. Restore your confidence with a radiant, natural-looking smile.
+                    ODC works with top companies around the world to always provide best services in dental imaging and digital dentistry sector.
                 </p>
                  
                 </div>
@@ -70,7 +70,7 @@ export default function Odc5() {
                         {[...companies, ...companies].map((company, index) => (
                             <motion.div
                                 key={`${company.name}-${index}`}
-                                className="cursor-pointer flex-shrink-0  sm:w-24 sm:h-24 md:w-40 md:h-40 flex items-center justify-center"
+                                className="cursor-pointer flex-shrink-0  w-12 h-12 md:w-40 md:h-40 flex items-center justify-center"
                                 whileHover={{ scale: 1.4 }}
                                 transition={{ type: "spring", stiffness: 200, damping: 40 }}
                             >

@@ -47,7 +47,7 @@ export default function Odc9() {
     ]
 
     return (
-        <div className=" bg-gradient-to-br bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4 transition-colors duration-300">
+        <div className=" bg-gradient-to-br bg-gray-50 dark:bg-black flex items-center justify-center p-4 transition-colors duration-300">
             <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8 relative">
                 <motion.div
                     className="w-full lg:w-1/3"
@@ -55,7 +55,7 @@ export default function Odc9() {
                     animate="visible"
                     variants={containerVariants}
                 >
-                    <div className="bg-white dark:bg-gray-800 border-indigo-100 dark:border-gray-700 rounded-[32px] p-8 shadow-lg h-full border relative overflow-hidden transition-colors duration-300">
+                    <div className="bg-white dark:bg-black dark:border-gray-900 dark:border-4 rounded-[32px] border-indigo-100 p-8 shadow-lg h-full border relative overflow-hidden transition-colors duration-300">
                         <motion.div
                             className="absolute -top-20 -right-20 w-40 h-40 bg-indigo-200 dark:bg-indigo-900 rounded-full opacity-20"
                             animate={controls}
@@ -109,7 +109,7 @@ export default function Odc9() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <div className="bg-white dark:bg-gray-800 border-indigo-100 dark:border-gray-700 rounded-[32px] p-8 shadow-lg h-full border relative overflow-hidden transition-colors duration-300">
+                    <div className="bg-white dark:bg-black dark:border-gray-900 dark:border-4  rounded-[32px]  border-indigo-100  p-8 shadow-lg h-full border relative overflow-hidden transition-colors duration-300">
                         <motion.h2
                             className="text-3xl font-bold leading-tight mb-8 text-center text-indigo-800 dark:text-white relative z-10"
                             initial={{ y: -20 }}

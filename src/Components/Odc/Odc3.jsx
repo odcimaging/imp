@@ -1,65 +1,64 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Smile, Stethoscope, Clipboard, Syringe, Calendar, X, ChevronLeft, ChevronRight } from 'lucide-react'
 
-// Step 1: Define the services data
+// Step 1: Define the services data (unchanged)
 const services = [
     {
         icon: Smile,
-        title: "Cosmetic Dentistry",
-        description: "Enhance your smile with our advanced cosmetic procedures.",
-        detailedDescription: "Our cosmetic dentistry services are designed to improve the appearance of your teeth and smile. We offer a range of treatments including teeth whitening, veneers, bonding, and smile makeovers.",
+        title: "Surgical Guide",
+        description: "With cutting edge technology surgical guide provides top notch accuracy",
+        detailedDescription: "Our surgical guides leverage advanced CBCT and intraoral scanning technologies, meticulously crafted by our in-house experts for superior accuracy. They come with comprehensive instructions and are produced with high-quality dental printers, ensuring exceptional precision and reliability for optimal surgical results.",
         images: [
-           
-           "a1.png",
-            "a2.png",
-            "a3.png",
+           "surgicalGuide_1.png",
+           "surgicalGuide_2.png",
         ]
     },
     {
         icon: Stethoscope,
-        title: "General Dentistry",
-        description: "Comprehensive care for all your dental health needs.",
-        detailedDescription: "Our general dentistry services cover a wide range of treatments to maintain and improve your oral health. From routine check-ups and cleanings to fillings, root canals, and gum disease treatment.",
+        title: "Implant Design",
+        description: "Our designed implant assure 100% reliability",
+        detailedDescription: "We specialize in meticulous implant placement design and comprehensive nerve mapping. Our services include delivering detailed, user-friendly reports, ensuring exacting precision and enhanced clarity for optimal treatment planning and superior outcomes.",
         images: [
-            "a3.png",
-            "a2.png",
-            "a1.png",
+            "implant_1.png",
+            "implant_2.png",
+            "implant_3.png",
         ]
     },
     {
         icon: Clipboard,
-        title: "Dental Implants",
-        description: "Restore your smile with our cutting-edge implant technology.",
-        detailedDescription: "Dental implants are a revolutionary solution for replacing missing teeth. Our state-of-the-art implant procedures provide a permanent, natural-looking replacement that functions just like your natural teeth.",
+        title: "Pathology CBCT",
+        description: "Best Pathology always",
+        detailedDescription: "Our cutting-edge CBCT technology helps identify maxillofacial tumors, cysts, osteomyelitis, fractures, impacted teeth and so on. Our detailed scans offer precise diagnosis and valuable insights with 3d reconstruction, enabling tailored treatment plans and high-quality care for various oral and maxillofacial pathologies",
         images: [
-           
-          "a2.png",
-            "a1.png",
-            "a3.png",
+           "pathology_1.png",
+           "pathology_2.png",
+           "pathology_3.png",
+           "pathology_4.png",
+           "pathology_5.png",
         ]
     },
     {
         icon: Syringe,
-        title: "Orthodontics",
-        description: "Straighten your teeth for a confident, beautiful smile.",
-        detailedDescription: "Our orthodontic treatments are designed to align your teeth and jaws for a healthier, more beautiful smile. We offer a variety of options including traditional braces, clear aligners, and accelerated orthodontics.",
+        title: "OPG | TMJ Xray | RVG | Cephalogram",
+        description: "Our premium radiology service pin point all the issues",
+        detailedDescription: "We deliver premium OPG, TMJ radiographs, RVG, and cephalometric imaging. Our sophisticated technology guarantees accurate results and detailed reports, facilitating thorough diagnostics and well-informed treatment strategies for superior patient outcomes.",
         images: [
-           
-           "a1.png",
-            "a3.png",
-            "a2.png",
+           "modality_1.png",
+           "modality_2.png",
+           "modality_3.png",
+           "modality_4.png",
         ]
     },
     {
         icon: Calendar,
-        title: "Preventive Care",
-        description: "Regular check-ups and cleanings for optimal oral health.",
-        detailedDescription: "Preventive care is the foundation of good oral health. Our preventive services include regular dental check-ups, professional cleanings, fluoride treatments, and dental sealants.",
+        title: "Endoanalysis",
+        description: "CBCT technology for precise endodontic analysis.",
+        detailedDescription: "We use advanced CBCT technology for comprehensive endodontic analysis, including precise working length determination, detection of missed canals, identification of canal perforations, evaluation of ledge formation, and assessment of canal curvature. Our detailed imaging ensures accurate diagnosis and effective treatment for optimal outcomes",
         images: [
-            "a3.png",
-            "a1.png",
-            "a2.png",
+            "endoanalysis_1.png",
+            "endoanalysis_2.png",
+            "endoanalysis_3.png",
         ]
     }
 ]
@@ -69,25 +68,50 @@ export default function Odc3() {
     const [selectedService, setSelectedService] = useState(null)
 
     return (
-        <div className='bg-white dark:bg-gray-900'>
-
-            <div className="bg-white max-w-7xl mx-auto dark:bg-gray-900  py-12 px-4 sm:px-6 lg:px-8 font-inter transition-colors duration-300">
+        <div className='bg-white dark:bg-black'>
+            <div className="bg-white max-w-7xl mx-auto dark:bg-black py-12 px-4 sm:px-6 lg:px-8 font-inter transition-colors duration-300">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className=" pt-8  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
-                        We Care Best System
+                    <h2 className="pt-8 lg:w-2/4 pb-8 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
+                        Radiology, Implant & Surgical Guide
                     </h2>
                     <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
-                        Experience the pinnacle of dental implant technology with our expert team. Restore your confidence with a radiant, natural-looking smile.
+                        Comprehensive services in radiology, implant planning, and surgical guidance, using advanced imaging technology to ensure precise diagnostics, accurate implant placement, and streamlined surgical procedures for optimal patient outcomes.
                     </p>
                     <div className="space-y-8">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <ServiceCard service={services[0]} setSelectedService={setSelectedService} className="md:col-span-1" isCircular={true} />
-                            <ServiceCard service={services[1]} setSelectedService={setSelectedService} className="md:col-span-2" />
+                            <ServiceCard 
+                                service={services[0]} 
+                                setSelectedService={setSelectedService} 
+                                className="md:col-span-1" 
+                                isCircular={true}
+                                imageHeight="h-48"
+                            />
+                            <ServiceCard 
+                                service={services[1]} 
+                                setSelectedService={setSelectedService} 
+                                className="md:col-span-2"
+                                imageHeight="h-96"
+                            />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-                            <ServiceCard service={services[2]} setSelectedService={setSelectedService} className="md:col-span-1" />
-                            <ServiceCard service={services[3]} setSelectedService={setSelectedService} className="md:col-span-2" />
-                            <ServiceCard service={services[4]} setSelectedService={setSelectedService} className="md:col-span-2" />
+                            <ServiceCard 
+                                service={services[2]} 
+                                setSelectedService={setSelectedService} 
+                                className="md:col-span-1"
+                                imageHeight="h-96"
+                            />
+                            <ServiceCard 
+                                service={services[3]} 
+                                setSelectedService={setSelectedService} 
+                                className="md:col-span-2"
+                                imageHeight="h-96"
+                            />
+                            <ServiceCard 
+                                service={services[4]} 
+                                setSelectedService={setSelectedService} 
+                                className="md:col-span-2"
+                                imageHeight="h-96"
+                            />
                         </div>
                     </div>
                     <AnimatePresence>
@@ -97,25 +121,23 @@ export default function Odc3() {
                     </AnimatePresence>
                 </div>
             </div>
-
         </div>
-
     )
 }
 
 // Step 3: Create the ServiceCard component
-function ServiceCard({ service, setSelectedService, className, isCircular = false }) {
+function ServiceCard({ service, setSelectedService, className, isCircular = false, imageHeight }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [isLoading, setIsLoading] = useState(true)
 
-    useEffect(() => {
+    React.useEffect(() => {
         const timer = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % service.images.length)
         }, 3000)
         return () => clearInterval(timer)
     }, [service.images.length])
 
-    useEffect(() => {
+    React.useEffect(() => {
         const img = new Image()
         img.src = service.images[currentImageIndex]
         img.onload = () => setIsLoading(false)
@@ -124,7 +146,7 @@ function ServiceCard({ service, setSelectedService, className, isCircular = fals
         }
     }, [currentImageIndex, service.images])
 
-    const cardClasses = `${className} bg-white dark:bg-gray-800 overflow-hidden shadow-lg ${isCircular ? 'rounded-full' : 'rounded-lg'}`
+    const cardClasses = `${className} bg-white dark:bg-black dark:border-gray-900 dark:border-2 dark:rounded-lg  overflow-hidden shadow-lg ${isCircular ? 'rounded-full' : 'rounded-lg'}`
 
     return (
         <motion.div
@@ -135,7 +157,7 @@ function ServiceCard({ service, setSelectedService, className, isCircular = fals
             whileHover={{ scale: 1.03 }}
         >
             <div className="h-full flex flex-col">
-                <div className={`relative ${isCircular ? 'w-48 h-48' : 'h-48'} ${isCircular ? 'mx-auto mt-4' : ''} overflow-hidden`}>
+                <div className={`relative ${isCircular ? 'w-48 h-48' : 'h-56'} ${isCircular ? 'mx-auto mt-4' : ''} overflow-hidden`}>
                     {isLoading && (
                         <div className={`absolute inset-0 bg-gray-200 dark:bg-gray-800 animate-pulse ${isCircular ? 'rounded-full' : ''}`}></div>
                     )}
@@ -165,7 +187,7 @@ function ServiceCard({ service, setSelectedService, className, isCircular = fals
                 <div className={`px-4 py-4 sm:px-6 ${isCircular ? 'text-center' : ''}`}>
                     <motion.button
                         type="button"
-                        className="inline-flex items-center  px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
                         onClick={() => setSelectedService(service)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
@@ -178,11 +200,11 @@ function ServiceCard({ service, setSelectedService, className, isCircular = fals
     )
 }
 
-// Step 4: Create the Modal component
+// Step 4: Create the Modal component (unchanged)
 function Modal({ service, onClose }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-    useEffect(() => {
+    React.useEffect(() => {
         const timer = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % service.images.length)
         }, 5000)

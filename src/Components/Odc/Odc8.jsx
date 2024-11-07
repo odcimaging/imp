@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const TestimonialCard = ({ name, role, company, image, quote }) => (
     <motion.div
-        className="relative p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 mx-2 my-6 h-[280px] transition-all duration-300 hover:shadow-xl"
+        className="relative p-6 bg-white dark:bg-black dark:border-gray-900 dark:border-4 rounded-[32px]  shadow-lg border border-gray-100  mx-2 my-6 h-[280px] transition-all duration-300 hover:shadow-xl"
         whileHover={{ scale: 1.03 }}
     >
         {/* Quote Icon */}
@@ -27,11 +27,7 @@ const TestimonialCard = ({ name, role, company, image, quote }) => (
         {/* Profile */}
         <div className="absolute bottom-6 left-6 right-6">
             <div className="flex items-center gap-3">
-                <img
-                    src={image}
-                    alt={name}
-                    className="w-10 h-10 rounded-full object-cover border-2 border-indigo-50 dark:border-indigo-900"
-                />
+               
                 <div>
                     <div className="font-semibold text-gray-900 dark:text-white text-sm">{name}</div>
                     <div className="text-xs text-gray-600 dark:text-gray-400">
@@ -46,53 +42,53 @@ const TestimonialCard = ({ name, role, company, image, quote }) => (
 export default function Odc8() {
     const testimonials = [
         {
-            name: "Sarah Thompson",
-            role: "Product Manager",
-            company: "TechCorp",
-            image: "1.png",
-            quote: "This platform has completely transformed how we handle our workflow. The efficiency gains have been remarkable."
+            "name": "Dr. Ashik Imon",
+            "role": "Dental Surgeon",
+            "company": "BD Dentist",
+            "image": "1.png",
+            "quote": "ODC Imaging's CBCT technology has elevated my diagnostic precision, ensuring accurate treatment planning and successful outcomes."
         },
         {
-            name: "Elena Petrova",
-            role: "Finance Director",
-            company: "GlobalBank",
-            image: "1.png",
-            quote: "The financial reporting features have streamlined our processes significantly. Exceptional ROI."
+            "name": "Dr. Kamrul Ahsan",
+            "role": "Orthodontist",
+            "company": "Smile Studio",
+            "image": "1.png",
+            "quote": "The detailed 3D imaging from ODC Imaging has been instrumental in planning complex orthodontic cases with pinpoint accuracy."
         },
         {
-            name: "Marcus Brown",
-            role: "IT Manager",
-            company: "TechFlow",
-            image: "1.png",
-            quote: "Security features are top-notch. Integration with our existing systems was seamless."
+            "name": "Dr. Israt Sultana",
+            "role": "Oral Surgeon",
+            "company": "Dental Surgery Hub",
+            "image": "1.png",
+            "quote": "ODC's CBCT and surgical guides have streamlined my procedures, improving both precision and patient recovery times."
         },
         {
-            name: "Rachel Chen",
-            role: "Creative Director",
-            company: "ArtisticMinds",
-            image: "2.png",
-            quote: "The creative tools have enhanced our team's productivity. Perfect for collaborative design work."
+            "name": "Dr. Mohammad Kawser",
+            "role": "Periodontist",
+            "company": "Healthy Gums Clinic",
+            "image": "2.png",
+            "quote": "With ODC Imaging's advanced CBCT, I can confidently assess bone structures and plan periodontal surgeries with exceptional accuracy."
         },
         {
-            name: "Thomas Wright",
-            role: "Engineering Lead",
-            company: "BuildTech",
-            image: "3.png",
-            quote: "The platform's scalability is impressive. Handles our complex projects with ease."
+            "name": "Dr. Tania Ahmed",
+            "role": "Implantologist",
+            "company": "Implant Center Bangladesh",
+            "image": "3.png",
+            "quote": "ODC's surgical guide system and precise imaging make implant placement more predictable and efficient, ensuring long-term success."
         },
         {
-            name: "Sophia Garcia",
-            role: "Customer Success",
-            company: "ServicePro",
-            image: "2.png",
-            quote: "Our customer satisfaction scores have improved significantly since implementation."
+            "name": "Dr. Mahibul Islam",
+            "role": "Pediatric Dentist",
+            "company": "Little Smiles Dental",
+            "image": "2.png",
+            "quote": "The ODC Imaging system allows us to plan treatments for young patients with complete clarity, minimizing risk and maximizing care."
         },
         {
-            name: "John Anderson",
-            role: "Quality Assurance",
-            company: "QualityTech",
-            image: "3.png",
-            quote: "The testing and QA features have revolutionized our quality assurance processes."
+            "name": "Dr. Nur Ahmed",
+            "role": "Endodontist",
+            "company": "Root Canal Specialist",
+            "image": "3.png",
+            "quote": "ODC Imaging’s CBCT has been a game changer in endodontics, helping me detect missed canals and ensure more accurate root canal treatments."
         }
     ]
 
@@ -145,25 +141,25 @@ export default function Odc8() {
 
     return (
 
-        <div className=' bg-white dark:bg-gray-900'>
+        <div className=' bg-white dark:bg-black'>
 
-            <div className="max-w-7xl mx-auto bg-gradient-to-br bg-white dark:bg-gray-900 py-24 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-300">
+            <div className="max-w-7xl mx-auto bg-gradient-to-br bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-300">
                 <div className="max-w-7xl mx-auto">
                     {/* Header */}
                     <div className=" mb-16">
                         <h2 className=" pt-8  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
-                            Our Customers Speak For Us
+                            We help Doctor To Excel In Their Practice
                         </h2>
                         <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
-                            Experience the pinnacle of dental implant technology with our expert team. Restore your confidence with a radiant, natural-looking smile.
+                            Experience the pinnacle of dental technology with our expert solution in Radiology & Imaging. Restore your confidence with our cutting edge services.
                         </p>
                     </div>
 
                     {/* Testimonials Slider */}
                     <div className="relative">
                         {/* Gradient Overlays */}
-                        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-50 dark:from-gray-900 to-transparent z-10"></div>
-                        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-100 dark:from-gray-900 to-transparent z-10"></div>
+                        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-50 dark:from-black to-transparent z-10"></div>
+                        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-100 dark:from-black to-transparent z-10"></div>
 
                         {/* Scrolling Content */}
                         <div className="h-[340px] overflow-hidden relative">
