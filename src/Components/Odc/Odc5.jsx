@@ -70,7 +70,7 @@ export default function Odc5() {
                         {[...companies, ...companies].map((company, index) => (
                             <motion.div
                                 key={`${company.name}-${index}`}
-                                className="cursor-pointer flex-shrink-0  w-12 h-12 md:w-40 md:h-40 flex items-center justify-center"
+                                className="cursor-pointer flex-shrink-0  w-20 h-20 md:w-40 md:h-40 flex items-center justify-center"
                                 whileHover={{ scale: 1.4 }}
                                 transition={{ type: "spring", stiffness: 200, damping: 40 }}
                             >

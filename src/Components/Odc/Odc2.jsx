@@ -61,8 +61,8 @@ export default function Odc2() {
 
     return (
         <div className="bg-gray-50 dark:bg-black font-inter">
-            <section className="w-full max-w-7xl mx-auto px-4 pt-20 sm:px-6 lg:px-0 rounded-3xl bg-white dark:bg-black">
-                <div className="rounded-2xl bg-white dark:bg-black p-8 overflow-hidden transition-all duration-500 ease-in-out">
+            <section className="w-full max-w-7xl mx-auto px-0 pt-20 sm:px-6 lg:px-0 rounded-3xl bg-white dark:bg-black">
+                <div className="rounded-2xl bg-white dark:bg-black p-4 overflow-hidden transition-all duration-500 ease-in-out">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-8">
                             <div className="space-y-4">

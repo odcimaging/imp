@@ -147,7 +147,7 @@ export default function Odc1() {
               {navItems.map((item) => (
                 <a
                   key={item}
-                  href={`/${item.toLowerCase().replace(' ', '-')}`}
+                  href={'/'}
                   className="text-black dark:text-white hover:text-indigo-500 dark:hover:text-indigo-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-md font-medium transition-all duration-200 relative group py-2"
                 >
                   {item}
