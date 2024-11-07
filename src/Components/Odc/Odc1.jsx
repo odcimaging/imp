@@ -130,15 +130,6 @@ export default function Odc1() {
             </Link>
           </div>
 
-
-
-
-
-
-
-
-
-
           {/* Center section - Attractive Clock */}
           <div className="hidden md:flex items-center justify-center flex-grow">
             <div className="bg-gradient-to-r bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-2 cursor-pointer  text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105" aria-live="polite" aria-atomic="true">
@@ -176,21 +167,6 @@ export default function Odc1() {
                 </Link>
               ))}
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             {/* Action Buttons - hidden on mobile, shown on larger screens */}
             <div className="hidden md:flex md:items-center md:space-x-4">
