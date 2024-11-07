@@ -78,7 +78,7 @@ export default function Odc2() {
                                 </button>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-4">
+                            <div className="hidden md:grid md:grid-cols-2 gap-4">
                                 <div 
                                     className={`p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-md transition-all duration-1000 ease-out delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} overflow-hidden h-[300px] md:h-[250px] relative`}
                                     style={{
