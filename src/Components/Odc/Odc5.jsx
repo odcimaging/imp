@@ -45,11 +45,11 @@ export default function Odc5() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6  relative">
                 {/* Step 7: Create the title */}
                 <div className=" mb-12">
-                    <h2 className=" pt-8  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
+                    <h2 className=" pt-8 text-center lg:text-start  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
                         ODC Imaging Technology Partner
                     </h2>
 
-                    <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
+                    <p className="text-lg text-justify text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
                     ODC works with top companies around the world to always provide best services in dental imaging and digital dentistry sector.
                 </p>
                  

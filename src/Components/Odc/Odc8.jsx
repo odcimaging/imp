@@ -143,14 +143,14 @@ export default function Odc8() {
 
         <div className=' bg-white dark:bg-black'>
 
-            <div className="max-w-7xl mx-auto bg-gradient-to-br bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-300">
+            <div className="max-w-7xl  mx-auto bg-gradient-to-br bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-300">
                 <div className="max-w-7xl mx-auto">
                     {/* Header */}
                     <div className=" mb-16">
-                        <h2 className=" pt-8  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
+                        <h2 className=" text-center lg:text-start pt-8  lg:w-2/4  pb-8  text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
                             We help Doctor To Excel In Their Practice
                         </h2>
-                        <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
+                        <p className="text-lg text-justify text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
                             Experience the pinnacle of dental technology with our expert solution in Radiology & Imaging. Restore your confidence with our cutting edge services.
                         </p>
                     </div>

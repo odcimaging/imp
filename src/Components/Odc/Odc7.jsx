@@ -126,7 +126,7 @@ export default function Odc7() {
 
                 {/* New FAQ Card */}
                 <div className="flex-1">
-                    <div className="bg-white  dark:bg-black dark:border-gray-900 dark:border-4 rounded-[32px] p-8 w-full max-w-md mx-auto shadow-lg dark:shadow-gray-700/30 transition-all duration-300 hover:shadow-xl">
+                    <div className="bg-white   dark:bg-black dark:border-gray-900 dark:border-4 rounded-[32px] p-8 w-full max-w-md mx-auto shadow-lg dark:shadow-gray-700/30 transition-all duration-300 hover:shadow-xl">
                         <h2 className="text-[28px] leading-tight mb-6 text-center dark:text-white font-semibold">FAQ on ODC IMAGING</h2>
                         <div className="space-y-4" ref={contentRef} style={{ height: contentHeight }}>
                             <AnimatePresence>

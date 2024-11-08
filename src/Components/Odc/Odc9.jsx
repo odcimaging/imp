@@ -48,7 +48,7 @@ export default function Odc9() {
 
     return (
         <div className=" bg-gradient-to-br bg-gray-50 dark:bg-black flex items-center justify-center p-4 transition-colors duration-300">
-            <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8 relative">
+            <div className="w-full  max-w-7xl flex flex-col lg:flex-row gap-8 relative">
                 <motion.div
                     className="w-full lg:w-1/3"
                     initial="hidden"

@@ -104,7 +104,7 @@ export default function Odc1() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative h-full">
         {/* Scroll Progress Indicator */}
         <div
-          className="absolute top-0 left-0 h-1 bg-gradient-to-r from-indigo-500 to-indigo-700 transition-all duration-300 ease-out"
+          className="absolute top-0 left-0 h-1 bg-gradient-to-r from-cyan-500 to-cyan-700 transition-all duration-300 ease-out"
           style={{ width: `${scrollProgress}%` }}
         ></div>
 
@@ -116,23 +116,18 @@ export default function Odc1() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-md">
               {/* SVG and Logo Text */}
+              
+              <img className='h-12 lg:h-20 w-auto' src="odc logo.jpg" alt="" />
 
-              <svg
-                className="h-8 w-auto text-indigo-500 transition-all duration-300 group-hover:rotate-180 group-focus:rotate-180"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-                <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
-              </svg>
+              
 
-              <span className="ml-2 text-[24px] font-bold text-indigo-500 tracking-tight transition-colors group-hover:text-indigo-600 group-focus:text-indigo-600">ODC IMAGING</span>
+              <span className="ml-2 text-[28px] font-bold text-cyan-500 tracking-tight transition-colors group-hover:text-cyan-500 ">ODC IMAGING</span>
             </Link>
           </div>
 
           {/* Center section - Attractive Clock */}
           <div className="hidden md:flex items-center justify-center flex-grow">
-            <div className="bg-gradient-to-r bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-2 cursor-pointer  text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105" aria-live="polite" aria-atomic="true">
+            <div className="bg-gradient-to-r bg-cyan-500 dark:bg-black dark:border-gray-900 dark:border-2 cursor-pointer  text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105" aria-live="polite" aria-atomic="true">
               <ClockIcon className="h-5 w-5 animate-pulse inline-block mr-2" aria-hidden="true" />
               <span className="text-sm font-medium tabular-nums tracking-wider">
                 {formatTime(currentTime)}
@@ -172,7 +167,7 @@ export default function Odc1() {
             <div className="hidden md:flex md:items-center md:space-x-4">
 
               <Link to="/report">
-                <button className="inline-flex justify-center items-center px-4 py-2 bg-indigo-500 dark:bg-black dark:border-gray-900 dark:border-2 dark:hover:bg-white dark:hover:text-black text-white rounded-full hover:bg-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 transition-all duration-300 font-normal text-sm hover:shadow-lg hover:-translate-y-0.5">
+                <button className="inline-flex justify-center items-center px-4 py-2 bg-cyan-500 dark:bg-black dark:border-gray-900 dark:border-2 dark:hover:bg-white dark:hover:text-black text-white rounded-full hover:bg-cyan-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 transition-all duration-300 font-normal text-sm hover:shadow-lg hover:-translate-y-0.5">
                   Online Report
                   <ArrowUpRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </button>

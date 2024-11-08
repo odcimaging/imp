@@ -71,10 +71,10 @@ export default function Odc3() {
         <div className='bg-white dark:bg-black'>
             <div className="bg-white max-w-7xl mx-auto dark:bg-black py-12 px-4 sm:px-6 lg:px-8 font-inter transition-colors duration-300">
                 <div className="max-w-7xl mx-auto">
-                    <h2 className="pt-8 lg:w-2/4 pb-8 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
+                    <h2 className="pt-8 lg:w-2/4 pb-8 text-4xl text-center lg:text-start md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out">
                         Radiology, Implant & Surgical Guide
                     </h2>
-                    <p className="text-lg text-gray-600 pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
+                    <p className="text-lg text-gray-600  text-justify lg:text-start pb-4 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 mb-4">
                         Comprehensive services in radiology, implant planning, and surgical guidance, using advanced imaging technology to ensure precise diagnostics, accurate implant placement, and streamlined surgical procedures for optimal patient outcomes.
                     </p>
                     <div className="space-y-8">
@@ -187,7 +187,7 @@ function ServiceCard({ service, setSelectedService, className, isCircular = fals
                 <div className={`px-4 py-4 sm:px-6 ${isCircular ? 'text-center' : ''}`}>
                     <motion.button
                         type="button"
-                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-indigo-500 hover:bg-indigo-600 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
                         onClick={() => setSelectedService(service)}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}

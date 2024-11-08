@@ -123,7 +123,7 @@ export default function Odc6() {
 
     return (
         <div className="bg-gray-50 dark:bg-black font-inter transition-colors duration-300">
-            <div className="max-w-7xl mx-auto p-2 sm:p-8 md:p-12 lg:p-16">
+            <div className="max-w-7xl mx-auto p-2 sm:p-8 md:p-12 lg:p-8">
                 {/* Step 5: Create the animated title */}
                 <h1 className="text-[24px] sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-12 lg:pb-8 text-center text-gray-900 dark:text-gray-100">
                     you can learn from our resources how to <span className="text-gray-400 dark:text-gray-300">get best result in your dental practice</span>

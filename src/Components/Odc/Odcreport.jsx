@@ -60,15 +60,15 @@ export default function Odcreport() {
 
     return (
         <div className="bg-gray-50 dark:bg-black font-inter min-h-screen">
-            <section className="w-full max-w-7xl mx-auto lg:px-4 px-2 pt-20   rounded-3xl bg-white dark:bg-black">
+            <section className="w-full max-w-7xl lg:mt-4 mx-auto lg:px-4 px-2 pt-20   rounded-3xl bg-white dark:bg-black">
                 <div className="rounded-2xl bg-white dark:bg-black p-4 lg:p-4 overflow-hidden transition-all duration-500 ease-in-out">
                     <div className="grid md:grid-cols-2 gap-8 items-stretch">
                         <div className="flex flex-col justify-between space-y-8 h-full">
                             <div className="space-y-4">
-                                <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold  text-gray-900 dark:text-white transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                                <h1 className={`text-4xl text-center lg:text-start md:text-5xl lg:text-6xl font-bold  text-gray-900 dark:text-white transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     ODC REPORT
                                 </h1>
-                                <p className={`text-lg text-gray-600 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                                <p className={`text-lg text-center lg:text-start text-gray-600 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     Your All Report In One Place 24/7
                                 </p>
                             </div>

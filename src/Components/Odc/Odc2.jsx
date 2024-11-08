@@ -35,6 +35,7 @@ export default function Odc2() {
         { name: "ENDO", src: "pathology.pdf", image: "img1.png", color: "from-indigo-400 to-indigo-600" },
         { name: "MAXILLA", src: "pathology.pdf", image: "img2.jpg", color: "from-green-400 to-green-600" },
         { name: "TMJ", src: "pathology.pdf", image: "img3.jpg", color: "from-pink-400 to-pink-600" },
+        { name: "IMPLANT", src: "pathology.pdf", image: "img4.jpg", color: "from-yellow-400 to-yellow-600" }
     ]
 
     const testimonials = [
@@ -61,25 +62,30 @@ export default function Odc2() {
     }
 
     return (
-        <div className="bg-gray-50 dark:bg-black font-inter">
-            <section className="w-full max-w-7xl mx-auto px-0 pt-20 sm:px-6 lg:px-0 rounded-3xl bg-white dark:bg-black">
+        <div className="bg-gray-50 dark:bg-black font-inter ">
+            <section className="w-full max-w-7xl mx-auto px-0 pt-20 sm:px-6 lg:px-4 rounded-3xl bg-white dark:bg-black">
                 <div className="rounded-2xl bg-white dark:bg-black p-4 overflow-hidden transition-all duration-500 ease-in-out">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="space-y-8">
-                            <div className="space-y-4">
-                                <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                            <div className="space-y-4 grid grid-cols-1 ">
+                                <h1 className={`text-4xl lg:text-left text-center md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     ODC IMAGING
                                 </h1>
-                                <p className={`text-lg text-gray-600 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                                <p className={`text-lg lg:text-left text-center text-gray-600 dark:text-gray-300 max-w-lg transition-all duration-1000 ease-out delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                     Maxillofacial Imaging & Digital Dentistry Center
                                 </p>
+                                <div className='flex justify-center lg:justify-start '>
 
-                                <Link to="/services">
-                                    <button className={`inline-flex items-center px-6 py-3 rounded-full bg-indigo-500 dark:bg-black dark:hover:bg-gray-900 dark:border-gray-900 dark:border-4  text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                                        ODC Imaging Services
-                                        <ArrowRight className="ml-2 h-5 w-5" />
-                                    </button>
-                                </Link>
+                                    <Link  to="/services">
+                                        <button className={`inline-flex items-center mt-4 px-5 py-3 rounded-full bg-cyan-500 dark:bg-black dark:hover:bg-gray-900 dark:border-gray-900 dark:border-4  text-white hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                                            VIEW SERVICES
+                                            <ArrowRight className="ml-2 h-5 w-5" />
+                                        </button>
+                                    </Link>
+
+                                </div>
+
+
                             </div>
 
                             <div className="hidden md:grid md:grid-cols-2 gap-4">
@@ -142,11 +148,11 @@ export default function Odc2() {
                                 </div>
                             </div>
 
-                            <div className={`flex justify-around transition-all duration-1000 ease-out delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                            <div className={`flex justify-between transition-all duration-1000 ease-out delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                                 {pdfFiles.map((pdf, index) => (
                                     <button
                                         key={index}
-                                        className={`w-24 h-24 rounded-full overflow-hidden transition-all duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 cursor-pointer relative group`}
+                                        className={`w-20 h-20 rounded-full overflow-hidden transition-all duration-300 hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 cursor-pointer relative group`}
                                         onClick={() => openPdfViewer(pdf)}
                                         aria-label={`View ${pdf.name}`}
                                     >
